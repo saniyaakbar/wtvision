@@ -1,0 +1,131 @@
+
+.loginContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+
+.loginLeft{
+  overflow: hidden;
+  height: 100%;
+  width: 60%;
+  background-color: rgb(113, 35, 35);
+}
+
+.loginRight{
+  position: relative;
+  width: 48%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginTitle{
+  color: rgb(153, 59, 59);
+  letter-spacing: 0.15rem;
+}
+
+.form{
+  width: 60%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(153, 59, 59);
+}
+.button{
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 100px;
+  width: 35%;
+  margin-top: 2rem;
+  color: white;
+  background-color: rgb(153, 59, 59);
+}
+
+.input{
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-block: 1.5rem;
+}
+
+.input>label{
+  margin: 0.8rem;
+}
+
+.loginInput{
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.3rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 15vh;
+  width: 110%;
+  padding: 2rem;
+  padding-right: 5rem;
+  background: #ffffff38;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 0px 8px 15px -10px rgba(0,0,0,0.75);
+}
+.icons{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+@media (max-width:900px) {
+  .loginLeft{
+    display: none;
+  }
+  .loginRight{
+    width: 100%;
+    padding: 0;
+  }
+  .bottom{
+    gap:2rem;
+  }
+  .loginInput{
+    width: 100%;
+    padding: 1rem;
+  }
+  
+}
+
+@media (max-width:500px) {
+  .loginCard{
+    min-width: 20rem;
+  }
+  .button{
+    margin-top: 1rem;
+  }
+
+  .form{
+    margin-top: 1rem;
+  }
+}
